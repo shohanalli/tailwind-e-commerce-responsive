@@ -11,12 +11,38 @@
       backdrop.classList.add('hidden');
     }
   }
+  const topBar = document.getElementById('topBar');
+  const bottomMenu = document.getElementById('bottomMenu');
+  let lastScroll = 0;
 
-  const productNav = document.getElementById("productNav");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      productNav.classList.remove("-translate-y-full");
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    // === Top Bar ===
+    if (currentScroll === 0) {
+      topBar.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'bg-white', 'shadow-md');
+    } else if (currentScroll < lastScroll) {
+      topBar.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'bg-white', 'shadow-md');
     } else {
-      productNav.classList.add("-translate-y-full");
+      topBar.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'bg-white', 'shadow-md');
     }
+
+    // === Bottom Menu (stick under Top Bar) ===
+    if (currentScroll === 0) {
+      bottomMenu.classList.remove('fixed', 'top-[70px]', 'left-0', 'right-0', 'z-40', 'shadow', 'bg-[#F1F9F2]');
+      bottomMenu.classList.add('hidden');
+    } else if (currentScroll < lastScroll) {
+      bottomMenu.classList.remove('hidden');
+      bottomMenu.classList.add('fixed', 'top-[70px]', 'left-0', 'right-0', 'z-40', 'shadow', 'bg-[#F1F9F2]');
+    } else {
+      bottomMenu.classList.remove('fixed', 'top-[70px]', 'left-0', 'right-0', 'z-40', 'shadow', 'bg-[#F1F9F2]');
+      bottomMenu.classList.add('hidden');
+    }
+
+    lastScroll = currentScroll <= 0 ? 0 : currentScroll;
   });
+
+
+
+
+

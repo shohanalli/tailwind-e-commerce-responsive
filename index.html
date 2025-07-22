@@ -31,9 +31,10 @@
   </div>
 </div>
 <!-- announcement bar stop -->
-    <!-- top bar start -->
-  <div class="hidden lg:flex w-[90%] mx-auto  py-3 px-4 items-center justify-between ">
-      <!-- Left: Search Icon -->
+<!-- top bar start -->  
+  <div id="topBar" class=" w-full  py-2 px-4 items-center  transition-all duration-300">
+   <div class="w-[90%] hidden lg:flex mx-auto justify-between">
+       <!-- Left: Search Icon -->
       <div class="flex items-center gap-2 text-[#67AE6E]">
         <i class="fa-solid fa-magnifying-glass text-xl"></i>
       </div>
@@ -46,10 +47,11 @@
         <i class="fa-solid fa-user text-xl"></i>
         <i class="fa-solid fa-cart-shopping text-xl"></i>
       </div>
+   </div>
   </div>
     <!-- top bar stop -->
     <!-- product name desktop nav start -->
-<nav  class="bg-[#F1F9F2] py-4 hidden lg:block">
+<nav id="bottomMenu" class="bg-[#F1F9F2] py-4 hidden lg:block w-full transition-all duration-300">
 <div class=" w-[90%] mx-auto ">
   <ul class="flex flex-wrap justify-between text-[#25a832] font-normal text-lg">
     
@@ -581,10 +583,34 @@
         </button>
       </div>
     </div>
-
   </div>
 </footer>
 <!-- Footer Section End -->
+<!-- Footer Copyright -->
+<footer class="bg-[#67AE6E] w-full py-5">
+  <div class="w-[90%] mx-auto flex flex-col md:flex-row items-center justify-between gap-4"> 
+    <!-- Left: Copyright -->
+    <p class="text-[#141414] text-sm md:text-base text-center md:text-left">
+      © 2025 md shohan ali. All rights reserved.
+    </p>
+    <!-- Right: Social Icons -->
+    <div class="flex gap-4 text-[#141414]] text-xl">
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- Footer Copyright -->
 <!-- custom js page link  -->
 <script src="js/style.js">
 </script>
