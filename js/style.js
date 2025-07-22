@@ -12,18 +12,11 @@
     }
   }
 
-    window.addEventListener("DOMContentLoaded", () => {
-      fetch("header.html")
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById("header-container").innerHTML = data;
-        })
-        .catch(error => {
-          console.error("Fetch error:", error);
-        });
-    });
+  const productNav = document.getElementById("productNav");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      productNav.classList.remove("-translate-y-full");
+    } else {
+      productNav.classList.add("-translate-y-full");
+    }
+  });
