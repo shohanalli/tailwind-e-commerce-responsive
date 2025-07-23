@@ -57,4 +57,9 @@ if (window.innerWidth < 1024) {
 
 }
 
-
+//product filter for mobile device
+    function toggleFilter() {
+      const filter = document.getElementById("mobileFilter");
+      filter.classList.toggle("-translate-x-full");
+      filter.classList.toggle("translate-x-0");
+    }
