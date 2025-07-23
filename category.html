@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css"><!-- coustom css -->
+    <link rel="shortcut icon" href="media/img/favicon.png" type="image/x-icon">
+    <title>Shohan</title>
+</head>
+<body class="font-sans">
+<header class="font-sans" >
+<!-- announcement bar start -->
+<div class="bg-[#B0DB9C] w-full flex justify-center">
+  <div class="max-w-[1440px] w-full px-4 py-2 md:px-10">
+    <p class="text-center text-base md:text-base text-[#234E2C] font-medium leading-relaxed">
+      আমাদের যে কোন পণ্য অর্ডার করতে কল বা WhatsApp করুন: 
+      <span class="inline-flex items-center gap-1 text-[#234E2C] font-semibold mx-1">
+        <i class="fa-solid fa-phone"></i>
+        +880000000
+      </span>
+      |
+      <span class="inline-flex items-center gap-1 text-[#234E2C] font-semibold mx-1">
+        <i class="fa-solid fa-phone-flip"></i>
+        হট লাইন: 000000000
+      </span>
+    </p>
+  </div>
+</div>
+<!-- announcement bar stop -->
+<!-- top bar start -->  
+  <div id="topBar" class=" w-full  py-2 px-4 items-center  transition-all duration-300 ">
+   <div class="w-[90%] hidden lg:flex mx-auto justify-between">
+       <!-- Left: Search Icon -->
+      <div class="flex items-center gap-2 text-[#67AE6E] cursor-pointer">
+        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+      </div>
+      <!-- Center: Logo -->
+      <div class="flex justify-center">
+       <a href="index.html"><img src="media/img/logo.png" alt="Logo" class="h-15 object-contain"></a>
+      </div>
+      <!-- Right: User + Cart Icons -->
+      <div class="flex items-center gap-4 text-[#67AE6E] cursor-pointe">
+        <i class="fa-solid fa-user text-xl"></i>
+        <i class="fa-solid fa-cart-shopping text-xl"></i>
+      </div>
+   </div>
+  </div>
+    <!-- top bar stop -->
+    <!-- category  name desktop nav start -->
+<nav id="bottomMenu" class="bg-[#F1F9F2] py-4 hidden lg:block w-full transition-all duration-300">
+<div class=" w-[90%] mx-auto ">
+  <ul class="flex flex-wrap justify-between text-[#25a832] font-normal text-lg"><a href="catagori.html">category1</a>  
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      category2
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      category3
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      category4
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      category5
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      category6
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      category7
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      category8
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 group-hover:w-[85%] transition-all duration-300"></span>
+    </li>
+  </ul>
+</div>
+</nav>
+   <!-- product name Desktop nav stop -->
+    <!-- mobile menu nav bar start -->
+  <!-- Only for small & medium devices -->
+<div id="mobileHeader" class="lg:hidden w-full bg-white py-3 px-4 flex items-center justify-between shadow-md">
+  <!-- Left: Menu Bar -->
+  <i class="fa-solid fa-bars text-2xl text-[#67AE6E] cursor-pointer" onclick="toggleMenu()"></i>
+  <!-- Center: Logo -->
+  <a href="index.html"><img src="media/img/logo.png" alt="Logo" class="h-10 mx-auto"></a>
+  <!-- Right: User & Cart -->
+  <div class="flex items-center gap-4 text-[#67AE6E]">
+    <i class="fa-solid fa-user text-xl"></i>
+    <i class="fa-solid fa-cart-shopping text-xl"></i>
+  </div>
+</div>
+<!-- Slide-in Side Menu -->
+<div id="sideMenu" class="fixed top-0 left-0 h-full w-65 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
+  <div class="flex justify-between items-center py-1 px-4 border-b border-[#25a832]">
+   <a href="index.html"> <img src="media/img/logo.png" alt="Logo" class="h-12 "></a>
+    <i class="fa-solid fa-xmark text-2xl cursor-pointer text-[#67AE6E]" onclick="toggleMenu()"></i>
+  </div>
+  <ul class="p-4 space-y-2 text-[#67AE6E] font-normal text-lg">
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category1
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category2
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category3
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category4
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category5
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category6
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category7
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300"></span>
+    </li>
+    <li class="relative group px-2 py-1 cursor-pointer text-[#25a832]">
+      Category8
+      <span class="absolute inset-x-0 bottom-0 h-[2px] bg-[#67AE6E] mx-auto w-0 transition-all duration-300">
+      </span>
+    </li>
+  </ul>
+</div>
+<!-- Backdrop  -->
+<div id="backdrop" class="hidden fixed inset-0 bg-black/50 z-40" onclick="toggleMenu()"></div>
+<!-- mobile menu nav bar stop -->
+</header><!-- header section stop -->
+
+
+
+<main>
+<div class="bg-[#B0DB9C] py-6">
+  <h1 class="text-center text-3xl md:text-4xl font-bold text-[#234E2C]">
+    Category Name
+  </h1>
+</div>
+<section  class="w-[95%] mx-auto  flex ">
+<aside class="hidden lg:block w-[30%] p-6 pb-20 bg-white rounded space-y-6">
+  <div>
+    <h1 class="text-3xl font-semibold text-gray-800 mb-5">Filters</h1>
+    <!-- Collection -->
+    <div class="mb-6">
+      <h3 class="text-lg font-semibold flex items-center justify-between text-gray-700 mb-3">
+        Collection <i class="fa-solid fa-angle-down text-sm"></i>
+      </h3>
+      <ul class="space-y-3 text-gray-600 text-sm">
+        <li><a href="#" class="hover:text-[#25a832]">Category1</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Category2</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Category3</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Category4</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Category5</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Category6</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Category7</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Category8</a></li>
+      </ul>
+    </div>
+    <!-- Availability -->
+    <div class="mb-6">
+      <h3 class="text-lg font-semibold flex items-center justify-between text-gray-700 mb-2">
+        Availability <i class="fa-solid fa-angle-down text-sm"></i>
+      </h3>
+      <form class="space-y-2 text-sm text-gray-600">
+    <div class="flex items-center gap-2 cursor-pointer">
+      <input type="checkbox" id="outStock" class="accent-[#25a832] cursor-pointer">
+      <label for="outStock" class="cursor-pointer">In stock (5)</label>
+    </div>
+    <div class="flex items-center gap-2 cursor-pointer">
+      <input type="checkbox" id="outStock" class="accent-[#25a832] cursor-pointer">
+      <label for="outStock" class="cursor-pointer">Out of stock (3)</label>
+    </div>
+      </form>
+    </div>
+
+    <!-- Price Filter -->
+    <div>
+      <h3 class="text-lg font-semibold text-gray-700 mb-2">Filter by Price</h3>
+      <div class="flex justify-between text-sm text-gray-500 mb-2">
+        <span>৳0</span>
+        <span>৳1000</span>
+      </div>
+      <!-- Static slider UI (visual only) -->
+      <div class="relative h-2 bg-gray-200 rounded">
+        <div class="absolute h-2 bg-[#25a832] rounded left-[20%] right-[30%]"></div>
+        <div class="absolute w-4 h-4 bg-white border-2 border-green-500 rounded-full top-1/2 -translate-y-1/2 left-[20%] shadow"></div>
+        <div class="absolute w-4 h-4 bg-white border-2 border-green-500 rounded-full top-1/2 -translate-y-1/2 right-[30%] shadow"></div>
+      </div>
+      <div class="flex justify-between mt-2 text-sm font-medium text-gray-700">
+        <span>৳200</span>
+        <span>৳700</span>
+      </div>
+    </div>
+  </div>
+</aside>
+<!-- product showing site start -->
+<aside class="w-full lg:w-[70%] bg-white p-6 py-5">
+  <div class="flex justify-between items-center mb-6 w-[100%]">
+      <ul class="text-base font-semibold text-gray-800">
+        <li class="cursor-pointe "><a href="">category<i class="fa-solid fa-angle-down text-sm"></i></a></li>
+      </ul>
+    <div class="flex gap-2 text-gray-700 text-lg">
+      <i class="fa-solid fa-bars cursor-pointer bg-[#F1F9F2] p-2 hover:bg-[#B0DB9C]"></i>
+      <i class="fa-solid fa-bars cursor-pointer bg-[#F1F9F2] p-2 hover:bg-[#B0DB9C]"></i>
+      <i class="fa-solid fa-bars cursor-pointer bg-[#F1F9F2] p-2 hover:bg-[#B0DB9C]"></i>
+      <i class="fa-solid fa-bars cursor-pointer bg-[#F1F9F2] p-2 hover:bg-[#B0DB9C]"></i>
+    </div>
+  </div>
+
+  <!-- Product List system start-->
+  <div class="space-y-6">
+    <!-- Product Card start-->
+    <div class="flex flex-col md:flex-row lg:flex-row gap-6 border-[#DDF6D2] border-2 rounded-lg p-4 relative">
+    <!-- Image Section -->
+    <div class="relative w-full md:w-[40%] lg:w-[40%]">
+      <img src="media/img/p-1.png" alt="" class="rounded-lg w-full">
+      <img src="media/img/favicon.png" alt="favicon" class="w-8 h-8 absolute top-2 left-2">
+    </div>
+
+    <!-- Content Section -->
+    <div class="w-full md:w-[60%] lg:w-[60%] flex flex-col justify-center md:text-left lg:text-left text-center">
+      <div class="ml-10">
+        <h3 class="text-xl font-semibold text-gray-800">Product 1</h3>
+        <p class="text-[#25a832] font-bold text-lg mb-2">৳450</p>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, accusantium!</p>
+      </div>
+      <div class="mt-4">
+        <button class="ml-10 bg-[#FFFF] text-[#25a832] px-5 py-2 border-[#67AE6E] border-2 rounded hover:bg-[#67AE6E] hover:text-white hover:border-transparent transition cursor-pointe">
+          <a href="#">Quick Add</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Product Card stop-->
+    <!-- Product Card start-->
+    <div class="flex flex-col md:flex-row lg:flex-row gap-6 border-[#DDF6D2] border-2 rounded-lg p-4 relative">
+    <!-- Image Section -->
+    <div class="relative w-full md:w-[40%] lg:w-[40%]">
+      <img src="media/img/p-1.png" alt="" class="rounded-lg w-full">
+      <img src="media/img/favicon.png" alt="favicon" class="w-8 h-8 absolute top-2 left-2">
+    </div>
+
+    <!-- Content Section -->
+    <div class="w-full md:w-[60%] lg:w-[60%] flex flex-col justify-center md:text-left lg:text-left text-center">
+      <div class="ml-10">
+        <h3 class="text-xl font-semibold text-gray-800">Product 1</h3>
+        <p class="text-[#25a832] font-bold text-lg mb-2">৳450</p>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, accusantium!</p>
+      </div>
+      <div class="mt-4">
+        <button class="ml-10 bg-[#FFFF] text-[#25a832] px-5 py-2 border-[#67AE6E] border-2 rounded hover:bg-[#67AE6E] hover:text-white hover:border-transparent transition cursor-pointe">
+          <a href="#">Quick Add</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Product Card stop-->
+    <!-- Product Card start-->
+    <div class="flex flex-col md:flex-row lg:flex-row gap-6 border-[#DDF6D2] border-2 rounded-lg p-4 relative">
+    <!-- Image Section -->
+    <div class="relative w-full md:w-[40%] lg:w-[40%]">
+      <img src="media/img/p-1.png" alt="" class="rounded-lg w-full">
+      <img src="media/img/favicon.png" alt="favicon" class="w-8 h-8 absolute top-2 left-2">
+    </div>
+
+    <!-- Content Section -->
+    <div class="w-full md:w-[60%] lg:w-[60%] flex flex-col justify-center md:text-left lg:text-left text-center">
+      <div class="ml-10">
+        <h3 class="text-xl font-semibold text-gray-800">Product 1</h3>
+        <p class="text-[#25a832] font-bold text-lg mb-2">৳450</p>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, accusantium!</p>
+      </div>
+      <div class="mt-4">
+        <button class="ml-10 bg-[#FFFF] text-[#25a832] px-5 py-2 border-[#67AE6E] border-2 rounded hover:bg-[#67AE6E] hover:text-white hover:border-transparent transition cursor-pointe">
+          <a href="#">Quick Add</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Product Card stop-->
+    <!-- Product Card start-->
+    <div class="flex flex-col md:flex-row lg:flex-row gap-6 border-[#DDF6D2] border-2 rounded-lg p-4 relative">
+    <!-- Image Section -->
+    <div class="relative w-full md:w-[40%] lg:w-[40%]">
+      <img src="media/img/p-1.png" alt="" class="rounded-lg w-full">
+      <img src="media/img/favicon.png" alt="favicon" class="w-8 h-8 absolute top-2 left-2">
+    </div>
+
+    <!-- Content Section -->
+    <div class="w-full md:w-[60%] lg:w-[60%] flex flex-col justify-center md:text-left lg:text-left text-center">
+      <div class="ml-10">
+        <h3 class="text-xl font-semibold text-gray-800">Product 1</h3>
+        <p class="text-[#25a832] font-bold text-lg mb-2">৳450</p>
+        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, accusantium!</p>
+      </div>
+      <div class="mt-4">
+        <button class="ml-10 bg-[#FFFF] text-[#25a832] px-5 py-2 border-[#67AE6E] border-2 rounded hover:bg-[#67AE6E] hover:text-white hover:border-transparent transition cursor-pointe">
+          <a href="#">Quick Add</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Product Card stop-->
+</div>
+<!-- Product List system -->
+</aside>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<!-- Footer Section Start -->
+<footer class="bg-[#e9f5e4] text-white py-10">
+  <div class="max-w-[1280px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    
+    <!-- Logo & Description -->
+    <div>
+     <a href="index.html"> <img src="media/img/logo.png" alt="Logo" class="mb-5 w-32"></a>
+      <p class="text-[#2e2d2d] text-sm leading-6">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      </p>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-[#141414]">Useful Links</h2>
+      <ul class="space-y-2 text-[#2e2d2d] text-sm">
+        <li><a href="#" class="hover:text-[#25a832]">Home</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">About Us</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Cases</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Blog</a></li>
+        <li><a href="#" class="hover:text-[#25a832]">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-[#141414]">Contact Now</h2>
+      <p class="text-[#2e2d2d] text-sm mb-4 leading-6">
+        555 4th 5t NW, Washington<br>
+        DC 20530, United States
+      </p>
+      <p class="text-[#2e2d2d] text-sm mb-4">
+        +88 01750 000 000<br>
+        +88 01750 000 000
+      </p>
+      <p class="text-[#2e2d2d] text-sm">
+        info@gmail.com<br>
+        info@gmail.com
+      </p>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-[#141414]">Quick Help</h2>
+      <p class="text-[#2e2d2d] text-sm mb-4">
+        Subscribe for our latest news & articles. We don’t spam!
+      </p>
+      <div class="flex">
+        <input type="email" placeholder="Email Address"
+          class="flex-1 py-2 px-3 text-black text-sm rounded-l-md focus:outline-none bg-white">
+        <button class="bg-[#67AE6E] hover:bg-[#966B3D] px-4 rounded-r-md text-white text-lg">
+          <i class="fa-brands fa-telegram"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
+<!-- Footer Copyright -->
+<footer class="bg-[#67AE6E] w-full py-5">
+  <div class="w-[90%] mx-auto flex flex-col md:flex-row items-center justify-between gap-4"> 
+    <!-- Left: Copyright -->
+    <p class="text-[#141414] text-sm md:text-base text-center md:text-left">
+      © 2025 md shohan ali. All rights reserved.
+    </p>
+    <!-- Right: Social Icons -->
+    <div class="flex gap-4 text-[#141414]] text-xl">
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="hover:text-[#141414]] transition-colors duration-200">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- Footer Copyright -->
+
+
+
+
+
+<!-- custom js page link  -->
+<script src="js/style.js"></script>  
+<script src="js/layout.js"></script>
+
+</body>
+</html>
